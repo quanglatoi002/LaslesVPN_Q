@@ -1,0 +1,64 @@
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15x;
+}
+
+.body {
+    font-family: $font;
+    color: $text-color;
+    font-weight: 400px;
+    box-sizing:border-box;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 45px;
+    border-radius: 100rem;
+    text-align: center;
+    font-family: $font;
+    line-height: 1;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    &--primary {
+        font-weight: 700;
+        background-color: $primary-color;
+        color: white;
+    }
+
+    &--outline {
+        background-color: transparent;
+        color: $primary-color;
+        font-weight: 500;
+        border: 1px solid;
+    }
+
+    &--rounded {
+        border-radius: 10px;
+        padding: 13px 65px;
+        box-shadow: var(--shadow);        
+    }
+    &--shadow {
+        box-shadow: var(--shadow);        
+    }
+}
+
+.boxed {
+    max-width: 555px;
+    margin: 0 auto;
+    text-align: center;
+
+  }
+  @media screen and (max-width: 767px) {
+    .button {
+      padding: 13px 26px;
+    }
+  }

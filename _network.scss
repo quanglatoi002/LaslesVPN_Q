@@ -1,0 +1,40 @@
+.network {
+    &-heading {
+    //   max-width: 380px;
+    //   margin: 0 auto;
+        margin: 0 auto;
+        max-width: 380px;
+    }
+    
+    &-image {
+      display: flex;
+      justify-content: space-around;
+      margin: 155px auto 0;
+
+    }
+  }
+  .partner {
+    margin-bottom: 50px;
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8px;
+        gap: 0 60px;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    .network-image {
+      margin-top: 50px;
+    }
+    .partner-container {
+      gap: 0 20px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .partner {
+      margin-bottom: 30px;
+    }
+  }
+
+  
